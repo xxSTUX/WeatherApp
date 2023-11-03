@@ -1,7 +1,7 @@
 # WeatherApp
 V1: Weather is sweet yeah!
 
-WeatherApp es una aplicación del tiempo que te permite obtener información meteorológica actual y previsión para los próximos 4 días. La aplicación está diseñada con Bootstrap v5 y utiliza la API de OpenWeather para obtener datos en tiempo real.
+WeatherApp es una aplicación del tiempo que te permite obtener información meteorológica actual y previsión para los próximos 5 días. La aplicación está diseñada con Bootstrap v5 y utiliza la API de OpenWeather para obtener datos en tiempo real.
 
 ## Estructura de Archivos
 
