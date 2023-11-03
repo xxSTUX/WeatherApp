@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather in App</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container my-5 ">
+    <h1 class="text-center title">Weather in</h1>
+    <form class="search-location">
+      <input type="text" name="city" placeholder="What city?" autocomplete="off"
+        class="form-control text-muted form-rounded p-4 shadow-sm" />
+    </form>
+
+    <!-- Primera tarjeta -->
+    <div class="card my-3 shadow-lg d-none back-card">
+      <div class="card-top text-center">
+        <div class="city-name my-3">
+          <p class="city">Abuja</p>
+          <span>...</span>
+        </div>
+        <img src="img/night_image.png" alt="" class="card-img-top time" />
+      </div>
+
+      <div class="card-body">
+        <div class="card-mid row">
+          <div class="col-8 text-center temp">
+            <span>30&deg;C</span>
+          </div>
+          <div class="col-4 condition-temp">
+            <p class="condition">Thunder Storm</p>
+            <p class="high">30&deg;C</p>
+            <p class="low">27&deg;C</p>
+          </div>
+        </div>
+
+        <div class="icon-container">
+          <img src="img/cloud.png" alt="" />
+        </div>
+        <div class="card-bottom px-5 py-4 row">
+          <div class="col text-center">
+            <p>30&deg;C</p>
+            <span>Feels Like</span>
+          </div>
+          <div class="col text-center">
+            <p>55%</p>
+            <span>Humidity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pronostico -->
+    <div class="container d-none container-forecast">
+      <div class="row d-flex justify-content-center padd">
+        <div class="rounded text-center pt-4 border-0 back-card shadow-lg bg-white">
+          <div class="row d-flex px-3 mt-auto gap-1 justify-content-center">
+            <div class="col-2">
+              <div class="d-flex flex-column block first-block">
+                <small class="text-muted mb-0" id="tomorrow"></small>
+                <div class="text-center"><img class="symbol-img1" src="img/09n.png"></div>
+                <h6 class="temp1"><strong>-30&#176;</strong></h6>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="d-flex flex-column block">
+                <small class="text-muted mb-0" id="dayAfterTomorrow"></small>
+                <div class="text-center"><img class="symbol-img2" src="img/10d.png"></div>
+                <h6 class="temp2"><strong>-29&#176;</strong></h6>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="d-flex flex-column block active">
+                <small class="text-muted mb-0" id="nextDay"></small>
+                <div class="text-center"><img class="symbol-img3" src="img/01d.png"></div>
+                <h6 class="temp3"><strong>-34&#176;</strong></h6>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="d-flex flex-column block">
+                <small class="text-muted mb-0" id="secondNextDay"></small>
+                <div class="text-center"><img class="symbol-img4" src="img/02d.png"></div>
+                <h6 class="temp4"><strong>-30&#176;</strong></h6>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="d-flex flex-column block last-block">
+                <small class="text-muted mb-0" id="thirdNextDay"></small>
+                <div class="text-center"><img class="symbol-img5" src="img/04d.png"></div>
+                <h6 class="temp5"><strong>-30&#176;</strong></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <script src="js/request.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
